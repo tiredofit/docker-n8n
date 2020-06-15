@@ -1,0 +1,12 @@
+#!/usr/bin/with-contenv bash
+
+source /assets/functions/00-container
+prepare_service
+PROCESS_NAME="n8n"
+
+if var_false ENABLE_NGINX ; then
+	print_warn "Disabling Nginx - Using N8N in place server - Be sure to set Authentication!"
+	service_stop 10-nginx
+fi
+
+liftoff

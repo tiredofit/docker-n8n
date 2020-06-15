@@ -1,0 +1,13 @@
+#!/usr/bin/with-contenv bash
+
+source /assets/functions/00-container
+
+PROCESS_NAME="n8n"
+
+check_container_initialized
+check_service_initialized init
+
+liftoff
+
+print_info "Starting n8n ${N8N_VERSION}"
+exec n8n start

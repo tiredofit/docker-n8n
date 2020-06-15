@@ -1,0 +1,40 @@
+version: '3.7'
+services:
+  
+  n8n-app:
+    image: tiredofit/n8n
+    container_name: n8n-app
+    labels:
+      - traefik.enable=true
+      - traefik.frontend.rule=Host:n8n.example.com
+      - traefik.port=80
+      - traefik.protocol=http
+      - traefik.docker.network=proxy
+      - traefik.backend=n8n-app
+    environment:
+      - ZABBIX_HOSTNAME=n8n-app
+
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=password
+
+      - GENERIC_TIMEZONE=America/Vancouver
+      - WEBHOOK_TUNNEL_URL=https://n8n.example.org/
+      - VUE_APP_URL_BASE_API=https://n8n.example.org/
+    
+      - N8N_PROTOCOL=https
+      - N8N_HOST=n8n.selfdesign.org
+      - N8N_PORT=80
+      
+      - DEBUG_MODE=FALSE
+
+    networks:
+      - proxy
+      - services
+    restart: always
+
+networks:
+  proxy:
+    external: true
+  services:
+    external: true
