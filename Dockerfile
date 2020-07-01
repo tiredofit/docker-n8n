@@ -2,7 +2,7 @@ FROM tiredofit/nginx:latest
 LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
 
 ### Set Defaults
-ENV N8N_VERSION=0.70.0 \
+ENV N8N_VERSION=0.71.0 \
     ENABLE_SMTP=FALSE \
     ENABLE_CRON=FALSE \
     NGINX_WEBROOT=/app \
