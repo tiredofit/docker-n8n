@@ -19,11 +19,11 @@ services:
       - N8N_BASIC_AUTH_PASSWORD=password
 
       - GENERIC_TIMEZONE=America/Vancouver
-      - WEBHOOK_TUNNEL_URL=https://n8n.example.org/
-      - VUE_APP_URL_BASE_API=https://n8n.example.org/
+      - WEBHOOK_TUNNEL_URL=https://n8n.example.com/
+      - VUE_APP_URL_BASE_API=https://n8n.example.com/
     
       - N8N_PROTOCOL=https
-      - N8N_HOST=n8n.selfdesign.org
+      - N8N_HOST=n8n.example.com
       - N8N_PORT=80
       
       - DEBUG_MODE=FALSE
