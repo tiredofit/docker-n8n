@@ -1,3 +1,9 @@
+## 1.0.19 2020-11-13 <dave at tiredofit dot ca>
+
+   ### Added
+      - n8n 0.93.0
+
+
 ## 1.0.18 2020-10-21 <dave at tiredofit dot ca>
 
    ### Added
