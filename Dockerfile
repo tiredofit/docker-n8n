@@ -1,10 +1,10 @@
 FROM tiredofit/nginx:latest
-LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
+LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
 ### Set Defaults
-ENV N8N_VERSION=0.113.0 \
-    ENABLE_SMTP=FALSE \
-    ENABLE_CRON=FALSE \
+ENV N8N_VERSION=0.134.0 \
+    CONTAINER_ENABLE_MESSAGING=FALSE \
+    CONTAINER_ENABLE_SCHEDULING=FALSE \
     NGINX_WEBROOT=/app \
     NGINX_ENABLE_CREATE_SAMPLE_HTML=FALSE \
     ZABBIX_HOSTNAME=n8n-app

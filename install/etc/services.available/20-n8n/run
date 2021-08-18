@@ -9,5 +9,5 @@ check_service_initialized init
 
 liftoff
 
-print_info "Starting n8n ${N8N_VERSION}"
+print_start "Starting n8n ${N8N_VERSION}"
 exec n8n start
