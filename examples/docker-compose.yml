@@ -1,8 +1,8 @@
-version: '3.7'
+version: '2.4'
 services:
   
   n8n-app:
-    image: tiredofit/n8n
+    image: tiredofit/n8n:latest
     container_name: n8n-app
     labels:
       - traefik.enable=true
@@ -12,7 +12,7 @@ services:
       - traefik.docker.network=proxy
       - traefik.backend=n8n-app
     environment:
-      - ZABBIX_HOSTNAME=n8n-app
+      - CONTAINER_NAME=n8n-app
 
       - N8N_BASIC_AUTH_ACTIVE=true
       - N8N_BASIC_AUTH_USER=admin
