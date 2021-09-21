@@ -2,7 +2,7 @@ FROM docker.io/tiredofit/nginx:latest
 LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
 ### Set Defaults
-ENV N8N_VERSION=0.137.0 \
+ENV N8N_VERSION=0.138.0 \
     CONTAINER_ENABLE_MESSAGING=FALSE \
     NGINX_WEBROOT=/app \
     NGINX_ENABLE_CREATE_SAMPLE_HTML=FALSE \
