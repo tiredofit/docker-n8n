@@ -6,7 +6,8 @@ ENV N8N_VERSION=0.153.0 \
     CONTAINER_ENABLE_MESSAGING=FALSE \
     NGINX_WEBROOT=/app \
     NGINX_ENABLE_CREATE_SAMPLE_HTML=FALSE \
-    CONTAINER_NAME=n8n-app
+    IMAGE_NAME="tiredofit/n8n" \
+    IMAGE_REPO_URL="https://github.com/tiredofit/docker-n8n/"
 
 ### Install Runtime Dependencies
 RUN set -x && \
