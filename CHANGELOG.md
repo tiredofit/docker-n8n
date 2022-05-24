@@ -1,3 +1,10 @@
+## 1.0.31 2022-05-24 <dave at tiredofit dot ca>
+
+   ### Added
+      - N8n 0.178.1
+      - Alpine 3.16 base
+
+
 ## 1.0.30 2022-05-11 <dave at tiredofit dot ca>
 
    ### Added
