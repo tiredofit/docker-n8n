@@ -4,6 +4,7 @@ LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 ### Set Defaults
 ENV N8N_VERSION=0.182.0 \
     CONTAINER_ENABLE_MESSAGING=FALSE \
+    NGINX_SITE_ENABLED=n8n \
     NGINX_WEBROOT=/app \
     NGINX_ENABLE_CREATE_SAMPLE_HTML=FALSE \
     IMAGE_NAME="tiredofit/n8n" \
