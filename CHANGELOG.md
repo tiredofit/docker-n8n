@@ -1,3 +1,12 @@
+## 1.0.42 2022-10-05 <dave at tiredofit dot ca>
+
+   ### Added
+      - n8n 0.196.0
+
+   ### Changed
+      - Migrate legacy nginx configuration
+
+
 ## 1.0.41 2022-09-14 <dave at tiredofit dot ca>
 
    ### Added
