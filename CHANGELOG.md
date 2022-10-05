@@ -1,3 +1,9 @@
+## 1.0.43 2022-10-05 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Nginx fix
+
+
 ## 1.0.42 2022-10-05 <dave at tiredofit dot ca>
 
    ### Added
