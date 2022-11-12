@@ -1,3 +1,9 @@
+## 1.0.45 2022-11-12 <dave at tiredofit dot ca>
+
+   ### Added
+      - n8n 0.202.1
+
+
 ## 1.0.44 2022-10-31 <dave at tiredofit dot ca>
 
    ### Added
