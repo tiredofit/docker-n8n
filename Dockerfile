@@ -1,8 +1,8 @@
-FROM docker.io/tiredofit/nginx:alpine-3.16
+FROM docker.io/tiredofit/nginx:alpine-3.17
 LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
 ### Set Defaults
-ENV N8N_VERSION=0.202.1 \
+ENV N8N_VERSION=0.203.1 \
     CONTAINER_ENABLE_MESSAGING=FALSE \
     NGINX_SITE_ENABLED=n8n \
     NGINX_WEBROOT=/app \
