@@ -1,8 +1,12 @@
-FROM docker.io/tiredofit/nginx:alpine-3.17
+ARG DISTRO="alpine"
+ARG DISTRO_VARIANT="3.17"
+
+FROM docker.io/tiredofit/nginx:${DISTRO}-${DISTRO_VARIANT}
 LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
-### Set Defaults
-ENV N8N_VERSION=0.203.1 \
+ARG N8N_VERSION
+
+ENV N8N_VERSION=${N8N_VERSION:-"0.204.0" \
     CONTAINER_ENABLE_MESSAGING=FALSE \
     NGINX_SITE_ENABLED=n8n \
     NGINX_WEBROOT=/app \
@@ -10,16 +14,15 @@ ENV N8N_VERSION=0.203.1 \
     IMAGE_NAME="tiredofit/n8n" \
     IMAGE_REPO_URL="https://github.com/tiredofit/docker-n8n/"
 
-### Install Runtime Dependencies
 RUN set -x && \
-    apk update && \
-    apk upgrade && \
-    apk add -t .n8n-build-deps \
+    package update && \
+    package upgrade && \
+    package install .n8n-build-deps \
                build-base \
                python3 \
                && \
     \
-    apk add -t .n8n-run-deps \
+    package install .n8n-run-deps \
                graphicsmagick \
                nodejs \
                npm \
@@ -28,14 +31,12 @@ RUN set -x && \
     mkdir -p /app && \
     npm_config_user=root npm install -g n8n@${N8N_VERSION} && \
     \
-### Misc & Cleanup
-    apk del .n8n-build-deps && \
-    rm -rf /tmp/* /var/cache/apk/*
+    package del .n8n-build-deps && \
+    package cleanup && \
+    rm -rf /root/.npm
 
 WORKDIR /app/
 
-### Networking Configuration
 EXPOSE 5678
 
-### Add Files
 COPY install /

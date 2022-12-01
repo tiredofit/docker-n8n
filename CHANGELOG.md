@@ -1,3 +1,12 @@
+## 1.0.47 2022-12-01 <dave at tiredofit dot ca>
+
+   ### Added
+      - n8n 0.204.0
+
+   ### Changed
+      - Rework Dockerfile
+
+
 ## 1.0.46 2022-11-23 <dave at tiredofit dot ca>
 
    ### Added
