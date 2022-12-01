@@ -14,7 +14,8 @@ ENV N8N_VERSION=${N8N_VERSION:-"0.204.0" \
     IMAGE_NAME="tiredofit/n8n" \
     IMAGE_REPO_URL="https://github.com/tiredofit/docker-n8n/"
 
-RUN set -x && \
+RUN source /assets/functions/00-container && \
+    set -x && \
     package update && \
     package upgrade && \
     package install .n8n-build-deps \
