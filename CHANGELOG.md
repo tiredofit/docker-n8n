@@ -1,3 +1,9 @@
+## 1.0.57 2023-02-16 <dave at tiredofit dot ca>
+
+   ### Added
+      - n8n 0.216.0
+
+
 ## 1.0.56 2023-02-14 <dave at tiredofit dot ca>
 
    ### Added
