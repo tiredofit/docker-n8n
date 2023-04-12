@@ -1,3 +1,9 @@
+## 1.0.72 2023-04-12 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Remove some build dependencies and make image smaller
+
+
 ## 1.0.71 2023-04-12 <dave at tiredofit dot ca>
 
    ### Added

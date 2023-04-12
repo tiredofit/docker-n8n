@@ -32,7 +32,7 @@ RUN source /assets/functions/00-container && \
     mkdir -p /app && \
     npm_config_user=root npm install -g n8n@${N8N_VERSION} && \
     \
-    package del .n8n-build-deps && \
+    package remove .n8n-build-deps && \
     package cleanup && \
     rm -rf /root/.npm
 
