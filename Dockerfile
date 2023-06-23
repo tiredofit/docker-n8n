@@ -6,7 +6,7 @@ LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
 ARG N8N_VERSION
 
-ENV N8N_VERSION=${N8N_VERSION:-"0.232.2"} \
+ENV N8N_VERSION=${N8N_VERSION:-"0.234.0"} \
     CONTAINER_ENABLE_MESSAGING=FALSE \
     NGINX_SITE_ENABLED=n8n \
     NGINX_WEBROOT=/app \
