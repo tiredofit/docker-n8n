@@ -1,3 +1,9 @@
+## 1.0.98 2023-07-25 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Fix backslash
+
+
 ## 1.0.97 2023-07-25 <dave at tiredofit dot ca>
 
    ### Added

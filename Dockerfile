@@ -27,7 +27,7 @@ RUN source /assets/functions/00-container && \
                graphicsmagick \
                nodejs \
                npm \
-               openssh-client
+               openssh-client \
                && \
     \
     mkdir -p /app && \
