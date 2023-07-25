@@ -1,3 +1,9 @@
+## 1.0.97 2023-07-25 <dave at tiredofit dot ca>
+
+   ### Added
+      - Add openssh client to run depenedencies
+
+
 ## 1.0.96 2023-07-25 <dave at tiredofit dot ca>
 
    ### Added
