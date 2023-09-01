@@ -1,3 +1,9 @@
+## 1.0.109 2023-09-01 <dave at tiredofit dot ca>
+
+   ### Added
+      - Add typescript globally
+
+
 ## 1.0.108 2023-08-31 <dave at tiredofit dot ca>
 
    ### Added

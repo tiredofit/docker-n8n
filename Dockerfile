@@ -31,6 +31,7 @@ RUN source /assets/functions/00-container && \
                && \
     \
     mkdir -p /app && \
+    npm_config_user=root npm install -g typescript && \
     npm_config_user=root npm install -g n8n@${N8N_VERSION} && \
     \
     package remove .n8n-build-deps && \
