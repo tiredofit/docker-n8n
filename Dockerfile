@@ -1,12 +1,11 @@
 ARG DISTRO="alpine"
 ARG DISTRO_VARIANT="3.18"
-
 FROM docker.io/tiredofit/nginx:${DISTRO}-${DISTRO_VARIANT}
 LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
 ARG N8N_VERSION
 
-ENV N8N_VERSION=${N8N_VERSION:-"1.5.1"} \
+ENV N8N_VERSION=${N8N_VERSION:-"0.236.3"} \
     CONTAINER_ENABLE_MESSAGING=FALSE \
     NGINX_SITE_ENABLED=n8n \
     NGINX_WEBROOT=/app \
@@ -25,6 +24,7 @@ RUN source /assets/functions/00-container && \
     \
     package install .n8n-run-deps \
                graphicsmagick \
+               git \
                nodejs \
                npm \
                openssh-client \
