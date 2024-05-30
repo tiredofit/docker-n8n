@@ -1,3 +1,9 @@
+## 1.0.179 2024-05-30 <dave at tiredofit dot ca>
+
+   ### Added
+      - n8n 1.44.0
+
+
 ## 1.0.178 2024-05-29 <dave at tiredofit dot ca>
 
    ### Added
