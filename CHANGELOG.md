@@ -1,3 +1,9 @@
+## 1.0.187 2024-06-27 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Fix for broken builds
+
+
 ## 1.0.186 2024-06-27 <dave at tiredofit dot ca>
 
    ### Added
