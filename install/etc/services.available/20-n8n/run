@@ -2,7 +2,7 @@
 
 source /assets/functions/00-container
 
-PROCESS_NAME="n8n"
+SERVICE_NAME="n8n"
 
 check_container_initialized
 check_service_initialized init
